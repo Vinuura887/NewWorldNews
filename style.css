@@ -1,0 +1,1078 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-image: url("https://preview.redd.it/y15ydjmbhwo31.jpg?auto=webp&s=9ae6f985cb1d9f81a187fb67f488129b3036d662");
+    background-position-y: -90px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#bg {
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+/* ------------------------ Animations ------------------------ */
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------ Header ------------------------ */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(194, 35, 35);
+    z-index: 1000;
+}
+
+#moreInfo {
+    text-align: center;
+    color: white;
+    display: flex;
+}
+
+#moreInfo > div > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#moreInfoContent {
+    display: flex;
+    margin: auto;
+    padding: 1%;
+}
+
+/* ------------------------ News ------------------------ */
+
+main {
+    padding-top: 4%;
+}
+
+#all {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#allInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    padding: 1% 0% 0% 0%;
+}
+
+#allinfoup {
+    background-color: rgb(249,249,249,255);
+    border-radius: 24px;
+    margin-bottom: 5.3%;
+}
+
+.border {
+    border-bottom: solid 1px;
+    border-image: linear-gradient(to right, #ffffff00 5%, rgb(202, 202, 202) 5%, rgb(202, 202, 202) 95%, #ffffff00 5%) 100% 1;
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2% 2% 2%;
+}
+
+.info {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1%;
+
+}
+
+.info:hover .infoimg > img {
+    transform: scale(1.02);
+}
+
+.info:hover .infotext > a > h3 {
+    color: rgb(122, 21, 21);
+    padding-left: 2%;
+}
+
+.infoimg > img {
+    width: 360px;
+    height: 220px;
+    border-radius: 24px;
+    padding: 2%;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.infotext > a {
+    text-decoration: none;
+}
+
+.infotext > a > h3 {
+    font-size: 1.8rem;
+    color: rgb(194, 35, 35);
+    transition: padding-left 0.3s ease-in-out;
+    padding-left: 1%;
+}
+
+.desc {
+    font-weight: lighter;
+    text-align: justify;
+    padding-top: 3.75%;
+    padding-left: 1%;
+    font-size: 0.9rem;
+}
+
+.hour {
+    font-size: 0.7rem;
+    padding-top: 3%;
+    padding-left: 1%;
+}
+
+/* ------------------------ Enlistment ------------------------ */
+
+#allinfodown {
+    display: flex;
+    width: 100%;
+    background-color: rgb(249,249,249,255);
+    border-radius: 24px;
+}
+
+#downimg {
+    width: 40%;
+    padding: 1% 0% 1% 10%;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#downimg > img {
+    height: 280px;
+    border-radius: 12px;
+}
+
+#downtext {
+    color: rgb(194, 35, 35);
+    padding-top: 12%;
+    text-align: center;
+    width: 60%;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    margin-right: 5%;
+}
+
+#downtext > h3 {
+    font-size: 1.6rem;
+}
+
+#allinfodown:hover #downimg {
+    transform: scale(1.02);
+}
+
+#allinfodown:hover #downtext {
+    color: rgb(122, 21, 21);
+    transform: scale(1.02);
+}
+
+/* ------------------------ More ------------------------ */
+
+#misc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    padding: 3% 0%;
+}
+
+#VIA {
+    color: black;
+    text-align: center;
+    padding: 2% 0%;
+    border-bottom: solid 1px rgb(202, 202, 202);
+}
+
+#VIA > h3 {
+    font-size: 1.2rem;
+}
+
+#lat1 {
+    height: 40%;
+    margin-bottom: 10%;
+    background-color: rgb(249,249,249,255);
+    border-radius: 24px;
+}
+
+.more {
+    text-align: left;
+    padding: 5% 5%;
+    font-weight: bold;
+    display: flex;
+}
+
+.moredesc {
+    text-decoration: none;
+    color: rgb(194, 35, 35);
+    padding-top: 2%;
+    width: 70%;
+    padding-right: 4%;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.moredesc > p {
+    font-size: 0.9rem;
+}
+
+.more:hover .moredesc > p {
+    color: rgb(122, 21, 21);
+    font-size: 0.905rem;
+}
+
+.more:hover .moreimg {
+    transform: scale(1.05);
+}
+
+.moreimg {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.moreimg > img {
+    width: 128px;
+    height: 128px;
+    border-radius: 12px;
+}
+
+/* ------------------------ Weather ------------------------ */
+
+#lat2 {
+    width: 100%;
+    height: 40%;    
+    background-color: rgb(249,249,249,255);
+    border-radius: 24px;
+}
+
+.forecast {
+    text-align: left;
+    padding: 5% 5%;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+}
+
+.map {
+    padding-bottom: 6%;
+    width: 90%;
+}
+
+.map > p {
+    font-size: 0.9rem;
+}
+
+.mapdata {
+    display: flex;
+}
+
+.mapicon {
+    padding-right: 5%;
+}
+
+.mapicon > img{
+    width: 64px;
+}
+
+.timeall {
+    display: flex;
+    justify-content: left;
+}
+
+.weather {
+    display: flex;
+}
+
+.time {
+    padding: 0% 14%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+}
+
+.time > i {
+    font-size: 1.72rem;
+    padding-bottom: 10%;
+    color: rgb(194, 35, 35);
+}
+
+.temp {
+    padding-left: 40%;
+}
+
+.temp > p {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 2% 0%;
+}
+
+.mapname {
+    font-weight: bold;
+    color: rgb(194, 35, 35);
+}
+
+/* ------------------------ Footer ------------------------ */
+
+footer {
+    background-color: rgb(194, 35, 35);
+    color: white;
+    padding: 1%;
+}
+
+footer > div > p {
+    text-align: center;
+}
+
+#footerdata {
+    display: flex;
+}
+
+#footercenter {
+    width: 33%;
+    text-align: center;
+}
+
+#footercenter > p:hover {
+    animation: shake 0.1s linear 1;
+}
+
+#footerimg {
+    width: 33%;
+}
+
+#footerimg > img {
+    width: 15%;
+    margin-left: 46%;
+}
+
+#footerimg > img:hover {
+    animation: shake 0.8s linear 1;
+}
+
+#privacy {
+    display: flex;
+    padding-top: 1.2%;
+    width: 33%;
+    padding-left: 1.8%;
+}
+
+#privacy > a {
+    color: white;
+    text-decoration: none;
+}
+
+#privacy > a:hover {
+    text-decoration: underline;
+}
+
+#nwn {
+    padding-right: 10px;
+    border-right: solid 1px rgb(202, 202, 202);
+}
+
+#pdp {
+    padding-left: 10px;
+}
+
+#social {
+    padding: 1% 0%;
+}
+
+#social > a {
+    color: white;
+}
+
+#social > a > i {
+    font-size: 1.8rem;
+}
+
+#social > a > i:hover {
+    animation: rotate 0.8s linear 1;
+}
+
+/* ------------------------ Media Queries ------------------------ */
+
+@media only screen and (min-width: 2560px) {
+    * {
+        font-size: 24px;
+    }
+
+    /* ------------------------ News ------------------------ */
+    
+    #allinfoup {
+        border-radius: 24px;
+        margin-bottom: 2.05%;
+    }
+
+    .infoimg > img {
+        width: 500px;
+        height: 306px;
+        border-radius: 24px;
+    }
+
+    /* ------------------------ Enlistment ------------------------ */
+
+    #allinfodown {
+        border-radius: 24px;
+    }
+
+    #downimg > img {
+        height: 400px;
+        border-radius: 16px;
+    }
+
+    /* ------------------------ More ------------------------ */
+
+    #lat1 {
+        border-radius: 24px;
+    }
+
+    .moreimg > img {
+        width: 180px;
+        height: 180px;
+        border-radius: 18px;
+    }
+
+    /* ------------------------ Weather ------------------------ */
+
+    #lat2 {
+        border-radius: 24px;
+    }
+
+    .mapicon > img {
+        width: 90px;
+    }
+
+    /* ------------------------ Footer ------------------------ */
+
+    #nwn {
+        padding-right: 14px;
+    }
+
+    #pdp {
+        padding-left: 14px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    * {
+        font-size: 13px;
+    }
+
+    /* ------------------------ News ------------------------ */
+    
+    #allinfoup {
+        border-radius: 18px;
+        margin-bottom: 1%;
+    }
+
+    .infoimg > img {
+        width: 276px;
+        height: 169px;
+        border-radius: 18px;
+    }
+
+    /* ------------------------ Enlistment ------------------------ */
+
+    #allinfodown {
+        border-radius: 18px;
+    }
+
+    #downimg > img {
+        height: 215px;
+        border-radius: 8px;
+    }
+
+    /* ------------------------ More ------------------------ */
+
+    #lat1 {
+        border-radius: 18px;
+    }
+
+    .moreimg > img {
+        width: 98px;
+        height: 98px;
+        border-radius: 9px;
+    }
+
+    /* ------------------------ Weather ------------------------ */
+
+    #lat2 {
+        border-radius: 18px;
+    }
+
+    .mapicon > img {
+        width: 49px;
+    }
+
+    /* ------------------------ Footer ------------------------ */
+
+
+    #nwn {
+        padding-right: 7px;
+    }
+
+    #pdp {
+        padding-left: 7px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    * {
+        font-size: 10px;
+    }
+
+    /* ------------------------ News ------------------------ */
+    
+    #allinfoup {
+        border-radius: 13px;
+        margin-bottom: 3.3%;
+    }
+
+    .infoimg > img {
+        width: 200px;
+        height: 122px;
+        border-radius: 13px;
+    }
+
+    /* ------------------------ Enlistment ------------------------ */
+
+    #allinfodown {
+        border-radius: 13px;
+    }
+
+    #downimg > img {
+        height: 155px;
+        border-radius: 6px;
+    }
+
+    /* ------------------------ More ------------------------ */
+
+    #lat1 {
+        border-radius: 13px;
+    }
+
+    .moreimg > img {
+        width: 71px;
+        height: 71px;
+        border-radius: 6px;
+    }
+
+    /* ------------------------ Weather ------------------------ */
+
+    #lat2 {
+        border-radius: 13px;
+    }
+
+    .mapicon > img {
+        width: 35px;
+    }
+
+    /* ------------------------ Footer ------------------------ */
+
+    footer {
+        font-size: 8rem;
+    }
+
+    #nwn {
+        padding-right: 6px;
+        font-size: 1rem;
+    }
+
+    #pdp {
+        padding-left: 6px;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        font-size: 7px;
+    }
+
+    /* ------------------------ News ------------------------ */
+    
+    #allinfoup {
+        border-radius: 10px;
+        margin-bottom: 6%;
+    }
+
+    .infoimg > img {
+        width: 144px;
+        height: 88px;
+        border-radius: 10px;
+    }
+
+    /* ------------------------ Enlistment ------------------------ */
+
+    #allinfodown {
+        border-radius: 10px;
+    }
+
+    #downimg > img {
+        height: 112px;
+        border-radius: 5px;
+    }
+
+    /* ------------------------ More ------------------------ */
+
+    #lat1 {
+        border-radius: 10px;
+    }
+
+    .moreimg > img {
+        width: 51px;
+        height: 51px;
+        border-radius: 5px;
+    }
+
+    /* ------------------------ Weather ------------------------ */
+
+    #lat2 {
+        border-radius: 10px;
+    }
+
+    .mapicon > img {
+        width: 25px;
+    }
+
+    /* ------------------------ Footer ------------------------ */
+
+    footer {
+        font-size: 8rem;
+    }
+
+    #nwn {
+        padding-right: 5px;
+        font-size: 1rem;
+    }
+
+    #pdp {
+        padding-left: 5px;
+        font-size: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    * {
+        font-size: 15px;
+    }
+
+    /* ------------------------ Header ------------------------ */
+
+    header {
+        position: relative;
+    }
+
+    /* ------------------------ News ------------------------ */
+    
+    main {
+        padding-top: 0;
+    }
+
+    #all {
+        flex-direction: column;
+        padding: 0%;
+        align-items: center;
+    }
+
+    #allInfo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #allinfoup {
+        border-radius: 0px;
+        margin-bottom: 7%;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .infoimg > img {
+        width: 420px;
+        height: 256px;
+        border-radius: 24px;
+    }
+
+    /* ------------------------ Enlistment ------------------------ */
+
+    #allinfodown {
+        border-radius: 0px;
+        width: 425px;
+    }
+
+    #downimg {
+        padding: 1% 0% 1% 5%;
+    }
+
+    #downimg > img {
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    #downtext {
+        padding-top: 5%;
+        margin-left: 5%;
+    }
+
+    /* ------------------------ More ------------------------ */
+
+    #misc {
+        width: 100%;
+    }
+
+    #lat1 {
+        border-radius: 0px;
+        margin-bottom: 7%;
+    }
+
+    .moreimg > img {
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+    }
+
+    /* ------------------------ Weather ------------------------ */
+
+    #lat2 {
+        border-radius: 0px;
+        margin-bottom: 6%;
+    }
+
+    .temp {
+        padding-left: 50%;
+    }
+
+    .mapicon > img {
+        width: 80px;
+    }
+
+    /* ------------------------ Footer ------------------------ */
+    
+    #privacy {
+        flex-direction: column;
+        text-align: end;
+    }
+
+    #nwn {
+        padding-right: 0;
+        padding-bottom: 5%;
+        font-size: 1rem;
+        border: none;
+    }
+
+    #pdp {
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    #social > a > i {
+        font-size: 1.3rem;
+    }
+
+    #footerimg > img {
+        width: 50%;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    * {
+        font-size: 14px;
+    }
+
+    /* ------------------------ Header ------------------------ */
+
+    header {
+        position: relative;
+    }
+
+    /* ------------------------ News ------------------------ */
+    
+    main {
+        padding-top: 0;
+    }
+
+    #all {
+        flex-direction: column;
+        padding: 0%;
+        align-items: center;
+    }
+
+    #allInfo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #allinfoup {
+        border-radius: 0px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .infoimg > img {
+        width: 375px;
+        height: 229px;
+        border-radius: 24px;
+    }
+
+    /* ------------------------ Enlistment ------------------------ */
+
+    #allinfodown {
+        border-radius: 0px;
+        width: 375px;
+    }
+
+    #downimg {
+        padding: 1% 0% 1% 5%;
+    }
+
+    #downimg > img {
+        height: 180px;
+        border-radius: 5px;
+    }
+
+    #downtext {
+        padding-top: 5%;
+        margin-left: 5%;
+    }
+
+    /* ------------------------ More ------------------------ */
+
+    #misc {
+        width: 100%;
+    }
+
+    #lat1 {
+        border-radius: 0px;
+    }
+
+    .moreimg > img {
+        width: 80px;
+        height: 80px;
+        border-radius: 5px;
+    }
+
+    /* ------------------------ Weather ------------------------ */
+
+    #lat2 {
+        border-radius: 0px;
+    }
+
+    .temp {
+        padding-left: 50%;
+    }
+
+    .mapicon > img {
+        width: 70px;
+    }
+
+    /* ------------------------ Footer ------------------------ */
+    
+    #privacy {
+        flex-direction: column;
+        text-align: end;
+    }
+
+    #nwn {
+        padding-right: 0;
+        padding-bottom: 5%;
+        font-size: 1rem;
+        border: none;
+    }
+
+    #pdp {
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    #social > a > i {
+        font-size: 1.2rem;
+    }
+
+    #footerimg > img {
+        width: 45%;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    * {
+        font-size: 13px;
+    }
+
+    /* ------------------------ Header ------------------------ */
+
+    header {
+        position: relative;
+    }
+
+    /* ------------------------ News ------------------------ */
+    
+    main {
+        padding-top: 0;
+    }
+
+    #all {
+        flex-direction: column;
+        padding: 0%;
+        align-items: center;
+    }
+
+    #allInfo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #allinfoup {
+        border-radius: 0px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .infoimg > img {
+        width: 320px;
+        height: 195px;
+        border-radius: 24px;
+    }
+
+    /* ------------------------ Enlistment ------------------------ */
+
+    #allinfodown {
+        border-radius: 0px;
+        width: 320px;
+    }
+
+    #downimg {
+        padding: 1% 0% 1% 5%;
+    }
+
+    #downimg > img {
+        height: 160px;
+        border-radius: 5px;
+    }
+
+    #downtext {
+        padding-top: 5%;
+        margin-left: 5%;
+    }
+
+    /* ------------------------ More ------------------------ */
+
+    #misc {
+        width: 100%;
+    }
+
+    #lat1 {
+        border-radius: 0px;
+    }
+
+    .moreimg > img {
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+    }
+
+    /* ------------------------ Weather ------------------------ */
+
+    #lat2 {
+        border-radius: 0px;
+    }
+
+    .temp {
+        padding-left: 50%;
+    }
+
+    .mapicon > img {
+        width: 60px;
+    }
+
+    /* ------------------------ Footer ------------------------ */
+    
+    #privacy {
+        flex-direction: column;
+        text-align: end;
+    }
+
+    #nwn {
+        padding-right: 0;
+        padding-bottom: 5%;
+        font-size: 0.9rem;
+        border: none;
+    }
+
+    #pdp {
+        padding-left: 0;
+        font-size: 0.9rem;
+    }
+
+    #social > a > i {
+        font-size: 1.1rem;
+    }
+
+    #footerimg > img {
+        width: 40%;
+        margin-left: 0;
+    }
+
+}
